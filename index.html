@@ -1,0 +1,38 @@
+---
+layout: default
+paginate_path: "page:num"
+---
+
+<div class="home">
+
+  <h2 class="fade">Recently</h2>
+
+  <ul class="posts">
+    {% for post in paginator.posts %}
+      <li>
+         &raquo; <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+		<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+<!-- 分页链接 -->
+<div class="pagination">
+
+  {% if paginator.previous_page %}
+	{% if paginator.previous_page == 1 %}
+			<a href="/" class="previous">Previous</a>
+	 {% else %}
+		<a href="/page{{ paginator.previous_page }}" class="previous">Previous</a>
+	{% endif %}
+  {% else %}
+    <span class="previous">Previous</span>
+  {% endif %}
+
+  {% if paginator.next_page %}
+    <a href="/page{{ paginator.next_page }}" class="next">Next</a>
+  {% else %}
+    <span class="next ">Next</span>
+  {% endif %}
+</div>
+
+</div>
