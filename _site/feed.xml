@@ -5,8 +5,8 @@
     <description></description>
     <link>http://herim.net/</link>
     <atom:link href="http://herim.net/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 15 Jun 2015 22:20:59 +0800</pubDate>
-    <lastBuildDate>Mon, 15 Jun 2015 22:20:59 +0800</lastBuildDate>
+    <pubDate>Mon, 15 Jun 2015 22:23:10 +0800</pubDate>
+    <lastBuildDate>Mon, 15 Jun 2015 22:23:10 +0800</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -195,7 +195,7 @@ _   下划线
 
 &lt;p&gt;Markdown语法参考&lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot;&gt;http://daringfireball.net/projects/markdown/&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Markdown工具推荐&lt;a href=&quot;&amp;quot;http://pad.haroopress.com&amp;quot;&quot;&gt;Haroopad&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Markdown工具推荐&lt;a href=&quot;http://pad.haroopress.com&quot;&gt;Haroopad&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 15 Jun 2015 00:00:00 +0800</pubDate>
         <link>http://herim.net/dev/2015/06/15/Markdown%E8%AF%AD%E6%B3%95%E7%AE%80%E4%BB%8B.html</link>
