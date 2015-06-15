@@ -5,8 +5,8 @@
     <description></description>
     <link>http://herim.net/</link>
     <atom:link href="http://herim.net/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 15 Jun 2015 22:44:12 +0800</pubDate>
-    <lastBuildDate>Mon, 15 Jun 2015 22:44:12 +0800</lastBuildDate>
+    <pubDate>Mon, 15 Jun 2015 22:44:55 +0800</pubDate>
+    <lastBuildDate>Mon, 15 Jun 2015 22:44:55 +0800</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -87,8 +87,8 @@
 
 &lt;p&gt;有序列表的话使用数字加上一个点号,其实前面的数字对显示是没有任何影响的，你可以任意，显示的序号是按照书写顺序的&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;1.列表
-2.列表
+&lt;pre&gt;&lt;code&gt;1. 列表
+2. 列表
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h4 id=&quot;section-7&quot;&gt;代码块&lt;/h4&gt;
