@@ -85,21 +85,24 @@
 
 <ol>
   <li>
-    <p>使用=(一级标题H1)和-(二级标题H2)，其中=和-的数量是没限制的
-     一级标题
-     ========</p>
+    <p>使用=(一级标题H1)和-(二级标题H2)，其中=和-的数量是没限制的</p>
 
-    <pre><code> 二级标题
+    <pre><code> 一级标题
+ ========
+    
+ 二级标题
  --------
 </code></pre>
   </li>
   <li>
-    <p>使用#，#的个数代表标题的级数，可以选择性的使用同样的#来关闭标题
-     #一级标题
-     ##二级标题
-     ……
-     ####六级标题
-     #一级标题#</p>
+    <p>使用#，#的个数代表标题的级数，可以选择性的使用同样的#来关闭标题</p>
+
+    <pre><code> #一级标题
+ ##二级标题
+ ......
+ ####六级标题
+ #一级标题#
+</code></pre>
   </li>
 </ol>
 
@@ -121,9 +124,12 @@
 
 <pre><code>* 列表
 + 列表
-- 列表 有序列表的话使用数字加上一个点号,其实前面的数字对显示是没有任何影响的，你可以任意，显示的序号是按照书写顺序的
+- 列表
+</code></pre>
 
-1.列表
+<p>有序列表的话使用数字加上一个点号,其实前面的数字对显示是没有任何影响的，你可以任意，显示的序号是按照书写顺序的</p>
+
+<pre><code>1.列表
 2.列表
 </code></pre>
 
@@ -151,8 +157,9 @@ _ _ _
 
 <h4 id="section-9">链接</h4>
 
-<p>Markdown支持两种链接方式：inline和reference
-inline方式使用一个方括号[链接名]紧跟一个圆括号写上要指向的URL和一个可选的标题</p>
+<p>Markdown支持两种链接方式：inline和reference</p>
+
+<p>inline方式使用一个方括号[链接名]紧跟一个圆括号写上要指向的URL和一个可选的标题</p>
 
 <pre><code>[链接名](URL "标题")
 </code></pre>
@@ -165,8 +172,10 @@ inline方式使用一个方括号[链接名]紧跟一个圆括号写上要指向
 [标签]: URL (标题)//可定义在任何地方
 </code></pre>
 
-<p>URL可以使用&lt;&gt;括起来
-	[标签]: <url> "标题"</url></p>
+<p>URL可以使用&lt;&gt;括起来</p>
+
+<pre><code>[标签]: &lt;URL&gt; "标题"
+</code></pre>
 
 <p>标签的名字可以包含字母，数字，空格和标点符号，并且是大小写不敏感的
 如果链接的标签名不写，那么默认的链接名会作为标签名</p>
@@ -231,8 +240,10 @@ _   下划线
 </code></pre>
 
 <h3 id="section-16">结束</h3>
-<p>Markdown语法参考<a href="http://daringfireball.net/projects/markdown/">http://daringfireball.net/projects/markdown/</a>
-Markdown工具推荐<a href="&quot;http://pad.haroopress.com&quot;">Haroopad</a></p>
+
+<p>Markdown语法参考<a href="http://daringfireball.net/projects/markdown/">http://daringfireball.net/projects/markdown/</a></p>
+
+<p>Markdown工具推荐<a href="&quot;http://pad.haroopress.com&quot;">Haroopad</a></p>
 
 
 </div>
