@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Herim&#39;s Blog</title>
+    <description></description>
+    <link>http://herim.net/</link>
+    <atom:link href="http://herim.net/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 15 Jun 2015 22:12:01 +0800</pubDate>
+    <lastBuildDate>Mon, 15 Jun 2015 22:12:01 +0800</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Markdown语法简介</title>
+        <description>&lt;h1 id=&quot;markdown-&quot;&gt;Markdown 语法&lt;/h1&gt;
+
+&lt;h3 id=&quot;section&quot;&gt;简介&lt;/h3&gt;
+
+&lt;p&gt;Markdown这个东西目的就主要是易写易读(Writing for the web)，然后转为HTML格式的纯文本。&lt;/p&gt;
+
+&lt;h3 id=&quot;markdownhtml&quot;&gt;Markdown和HTML&lt;/h3&gt;
+
+&lt;p&gt;Markdown对应的是HTML的一个子集，可以直接用HTML标签编写。Markdown对一些HTML块元素有限制(div·,table,pre,p)需要在前后加上换行将他们隔开，并且里面的Markdown语法是不能被处理的。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-1&quot;&gt;特殊字符处理&lt;/h3&gt;
+
+&lt;p&gt;在HTML中&lt;code&gt;&amp;lt;&lt;/code&gt;标识一个标签的开始,&lt;code&gt;&amp;amp;&lt;/code&gt;标识一个HTML实体，如果要显示字面意思就必须使用实体标识如&lt;code&gt;&amp;amp;lt;&lt;/code&gt;,&lt;code&gt;&amp;amp;amp&lt;/code&gt;,但在Markdown中，只需要直接写上字面意思,Markdown会把它处理为HTML实体。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-2&quot;&gt;块元素&lt;/h3&gt;
+
+&lt;h4 id=&quot;section-3&quot;&gt;段以及换行&lt;/h4&gt;
+
+&lt;p&gt;Markdown中一行文本就是一段(&lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt;),在Markdown中要插入一个&lt;code&gt;&amp;lt;br/&amp;gt;&lt;/code&gt;标签需要按两个或以上的空格再回车。&lt;/p&gt;
+
+&lt;h4 id=&quot;section-4&quot;&gt;标题&lt;/h4&gt;
+
+&lt;p&gt;Markdown中的标题有两种写法
+1. 使用=(一级标题H1)和-(二级标题H2)，其中=和-的数量是没限制的
+		一级标题
+        ========&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    二级标题
+    -------- 2. 使用#，#的个数代表标题的级数，可以选择性的使用同样的#来关闭标题
+	#一级标题
+    ##二级标题
+    ......
+    ####六级标题
+    #一级标题#
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;section-5&quot;&gt;块引用&lt;/h4&gt;
+
+&lt;p&gt;&lt;em&gt;块引用&lt;/em&gt; : &lt;code&gt;&amp;lt;blockquote&amp;gt;&lt;/code&gt; 与 &lt;code&gt;&amp;lt;/blockquote&amp;gt;&lt;/code&gt; 之间的所有文本都会从常规文本中分离出来，经常会在左、右两边进行缩进（增加外边距），而且有时会使用斜体。也就是说，块引用拥有它们自己的空间。
+在Markdown中只需要在行首加上&amp;gt;就可以
+	&amp;gt;这是一个
+	&amp;gt;块引用
+当然你可以只在第一行写一个&amp;gt;也是可以的
+	&amp;gt;这是一个
+	块引用
+块引用是可以嵌套的只需要多加一个&amp;gt;就可以，并且块引用是可以包含其他Markdown元素的如标题，列表和代码块&lt;/p&gt;
+
+&lt;h4 id=&quot;section-6&quot;&gt;列表&lt;/h4&gt;
+
+&lt;p&gt;Markdown支持有序列表和无序列表
+无序列表使用星号(*),加号(+),连字符(-)作为列表标记，它们的效果是一样的&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;* 列表
++ 列表
+- 列表 有序列表的话使用数字加上一个点号,其实前面的数字对显示是没有任何影响的，你可以任意，显示的序号是按照书写顺序的
+
+1.列表
+2.列表
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;section-7&quot;&gt;代码块&lt;/h4&gt;
+
+&lt;p&gt;主要是用来显示源代码片段的，Markdown会将它们转化为&lt;code&gt;&amp;lt;pre&amp;gt;&lt;/code&gt;和&lt;code&gt;&amp;lt;code&amp;gt;&lt;/code&gt;
+在Markdown中你只需要缩进4个空格或者一个Tab就可以产生代码块&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;function fun() {
+	console.info(&quot;js&quot;);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;section-8&quot;&gt;水平分割线&lt;/h4&gt;
+
+&lt;p&gt;只要使用3个或者以上的连字符，星号或者下划线就可以产生水平分割线(&lt;code&gt;&amp;lt;hr/&amp;gt;&lt;/code&gt;)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;***
+* * *
+_ _ _
+----
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;span&quot;&gt;行内元素&lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt;&lt;/h3&gt;
+
+&lt;h4 id=&quot;section-9&quot;&gt;链接&lt;/h4&gt;
+
+&lt;p&gt;Markdown支持两种链接方式：inline和reference
+inline方式使用一个方括号[链接名]紧跟一个圆括号写上要指向的URL和一个可选的标题&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[链接名](URL &quot;标题&quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;reference方式使用一个方括号[链接名]紧跟一个方括号写上要指向的标签&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[链接名][标签]
+[标签]: URL &quot;标题&quot;//可定义在任何地方
+[标签]: URL &#39;标题&#39;//可定义在任何地方
+[标签]: URL (标题)//可定义在任何地方
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;URL可以使用&amp;lt;&amp;gt;括起来
+	[标签]: &lt;url&gt; &quot;标题&quot;&lt;/url&gt;&lt;/p&gt;
+
+&lt;p&gt;标签的名字可以包含字母，数字，空格和标点符号，并且是大小写不敏感的
+如果链接的标签名不写，那么默认的链接名会作为标签名&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[百度][]
+[百度]: http://www.baidu.com
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;section-10&quot;&gt;强调&lt;/h4&gt;
+
+&lt;p&gt;Markdown把星号(&lt;code&gt;*&lt;/code&gt;)和下划线(&lt;code&gt;_&lt;/code&gt;)作为强调文本的开始标识，被一个&lt;code&gt;*&lt;/code&gt;或者&lt;code&gt;_&lt;/code&gt;包裹的文本将会转换为&lt;code&gt;&amp;lt;em&amp;gt;&lt;/code&gt;，被两个&lt;code&gt;*&lt;/code&gt;或者&lt;code&gt;_&lt;/code&gt;包裹的文本将会转化为&lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    *强调文本*
+    _强调文本_
+    **更强的强调的文本**
+    __更强的强调的文本__
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;section-11&quot;&gt;代码&lt;/h4&gt;
+
+&lt;p&gt;Markdown用反引号来标识代码段，如果其中有字面意思的反引号，则要使用多个反引号&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;这个一个`代码`段
+这是一个包括反引号的``代`码``段
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;section-12&quot;&gt;图片&lt;/h4&gt;
+
+&lt;p&gt;Markdown的图片和链接差不多&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;![图片](URL &quot;标题&quot;)
+![图片][标签]
+[标签]: URL &quot;标题&quot;//可定义在任何地方
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-13&quot;&gt;其他&lt;/h3&gt;
+
+&lt;h4 id=&quot;section-14&quot;&gt;自动链接&lt;/h4&gt;
+
+&lt;p&gt;如果想直接显示链接地址或者邮箱地址，Markdown支持一种快捷的方式&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;http://www.google.com&amp;gt;
+&amp;lt;herimvane@gmail.com&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;section-15&quot;&gt;反斜杠&lt;/h4&gt;
+
+&lt;p&gt;Markdown支持使用反斜杠&lt;code&gt;\&lt;/code&gt;将某些字符转义，有如下字符&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;\   反斜杠
+`   反引号
+*   星号
+_   下划线
+{}  大括号
+[]  方括号
+()  圆括号
+#   井号
++   加号
+-   减号/连字符
+.   点号
+!   惊叹号
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-16&quot;&gt;结束&lt;/h3&gt;
+&lt;p&gt;Markdown语法参考&lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot;&gt;http://daringfireball.net/projects/markdown/&lt;/a&gt;
+Markdown工具推荐&lt;a href=&quot;&amp;quot;http://pad.haroopress.com&amp;quot;&quot;&gt;Haroopad&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 15 Jun 2015 00:00:00 +0800</pubDate>
+        <link>http://herim.net/dev/2015/06/15/Markdown%E8%AF%AD%E6%B3%95%E7%AE%80%E4%BB%8B.html</link>
+        <guid isPermaLink="true">http://herim.net/dev/2015/06/15/Markdown%E8%AF%AD%E6%B3%95%E7%AE%80%E4%BB%8B.html</guid>
+        
+        
+        <category>dev</category>
+        
+      </item>
+    
+  </channel>
+</rss>
