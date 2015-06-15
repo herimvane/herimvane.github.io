@@ -5,8 +5,8 @@
     <description></description>
     <link>http://herim.net/</link>
     <atom:link href="http://herim.net/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 15 Jun 2015 22:40:55 +0800</pubDate>
-    <lastBuildDate>Mon, 15 Jun 2015 22:40:55 +0800</lastBuildDate>
+    <pubDate>Mon, 15 Jun 2015 22:42:33 +0800</pubDate>
+    <lastBuildDate>Mon, 15 Jun 2015 22:42:33 +0800</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -65,9 +65,11 @@
 
 &lt;pre&gt;&lt;code&gt;&amp;gt;这是一个
 &amp;gt;块引用
-&amp;gt; 当然你可以只在第一行写一个&amp;gt;也是可以的
+&lt;/code&gt;&lt;/pre&gt;
 
-&amp;gt;这是一个
+&lt;p&gt;当然你可以只在第一行写一个&amp;gt;也是可以的&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt;这是一个
 块引用
 &lt;/code&gt;&lt;/pre&gt;
 
