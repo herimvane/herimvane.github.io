@@ -1,10 +1,9 @@
 # Site settings
-encoding: utf-8
 title: Herim's Blog
 email: herimvane@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://herim.net" # the base hostname & protocol for your site
+url: "http://herimvane.com" # the base hostname & protocol for your site
 
 
 # Build settings
