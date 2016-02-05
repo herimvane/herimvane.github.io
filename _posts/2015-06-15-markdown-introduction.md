@@ -1,25 +1,16 @@
 ---
 layout: post
 title: Markdown Introduction
-description: "Markdown"
-headline: "Markdown"
-categories: it
-tags: 
-  - blogging
-  - markdown
-image: 
-  feature: "website-speed.jpg"
-  credit: spreadeffect.com
-  creditlink: "http://www.spreadeffect.com/blog/improve-website-speed/"
+description: "Let's write with markdown"
+category: it
+tags: [makdown]
 comments: true
-mathjax: null
-featured: true
-published: true
+share: true
 ---
 
-#Markdown 语法#
+#Markdown 语法
 
-###简介###
+###简介
 
 Markdown目的主要是实现易写易读(Writing for the web)，然后转为HTML格式的纯文本。
 
