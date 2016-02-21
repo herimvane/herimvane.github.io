@@ -12,6 +12,10 @@ Version: 1.0
    Basic Styles
 ================================================== */
 
+#supersized, #supersized li {
+	position: absolute !important;
+}
+
 html, body {
 	height: 100%;
 }
