@@ -52,7 +52,7 @@
 	}
 	
 	#home-slider {
-		/*margin-left: -20px;*/
+		margin-left: -20px;
 		margin-right: -20px;
 	}
 	
@@ -66,7 +66,7 @@
 	.page-alternate,
 	#twitter-feed,
 	footer {
-		/*margin-left: -20px;*/
+		margin-left: -20px;
 		margin-right: -20px;
 		padding-left: 20px;
 		padding-right: 20px;	
@@ -77,7 +77,7 @@
 	}
 	
 	header .sticky-nav.stuck #logo {
-		/*margin-left: -20px;*/
+		margin-left: -20px;
 	}
 	
 	header .sticky-nav #menu {
@@ -98,7 +98,7 @@
 	}
 	
 	#menu-nav-mobile {
-		/*margin-left: -20px;*/
+		margin-left: -20px;
 		margin-right: -20px;
 		margin-bottom: 0;
 	}
@@ -208,7 +208,7 @@
 	}
 	
 	#home-slider {
-		/*margin-left: -20px;*/
+		margin-left: -20px;
 		margin-right: -20px;
 	}
 	
@@ -226,10 +226,10 @@
 	.page-alternate,
 	#twitter-feed,
 	footer {
-		/*margin-left: -20px;*/
+		/*margin-left: -20px;
 		margin-right: -20px;
 		padding-left: 20px;
-		padding-right: 20px;	
+		padding-right: 20px;*/	
 	}
 	
 	header .sticky-nav #logo {
@@ -258,7 +258,7 @@
 	}
 	
 	#menu-nav-mobile {
-		/*margin-left: -20px;*/
+		margin-left: -20px;
 		margin-right: -20px;
 		margin-bottom: 0;
 	}
