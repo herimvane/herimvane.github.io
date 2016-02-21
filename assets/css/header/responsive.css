@@ -208,8 +208,8 @@
 	}
 	
 	#home-slider {
-		margin-left: -20px;
-		margin-right: -20px;
+		/*margin-left: -20px;
+		margin-right: -20px;*/
 	}
 	
 	#home-slider ul#slide-list {
@@ -226,7 +226,7 @@
 	.page-alternate,
 	#twitter-feed,
 	footer {
-		margin-left: -20px;
+		/*margin-left: -20px;*/
 		margin-right: -20px;
 		padding-left: 20px;
 		padding-right: 20px;
