@@ -11,8 +11,8 @@ readtime:         true
 # Specify the average Words per minute. If not defined, 180 will be used
 wpm:				      200
 # Turn on or off the fin animations in the header and footer
-triangleheader:		true
-animated_fins:	  true
+triangleheader:		false
+animated_fins:	  false
 # Specify the fin color in RGB value
 fin_color:        "255,255,255"
 # Change url to your domain. Leave localhost server or blank when working locally.
@@ -53,14 +53,17 @@ bing_verify:
 links:
   - title: Home
     url: /
-    external: false
+    external: true
     icon: home
   - title: Categories
     url: /categories
+    external: true
   - title: Tags
     url: /tags
-  - title: About me?
+    external: true
+  - title: About
     url: /herimvane
+    external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Asia/Chongqing

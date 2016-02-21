@@ -378,7 +378,7 @@ h4,
 h5,
 h6,
 .lead {
-  color: #1e1e1f;
+  /*color: #1e1e1f;*/
 }
 a {
   color: #807f83;
@@ -395,7 +395,7 @@ blockquote:before {
   color: #807f83;
 }
 .post-info {
-  color: #67666a;
+  /*color: #67666a;*/
 }
 .pagination {
   color: #67666a;
@@ -486,6 +486,8 @@ html {
   font-size: 18px;
 }
 #main {
+  background:#2f3238 none repeat scroll 0 0;
+  padding: 100px 0;
   position: relative;
   z-index: 1;
 }
@@ -585,7 +587,7 @@ html {
 /* FOOTER */
 /* ------ */
 #footer {
-  margin-top: 72px;
+  background:#2f3238 none repeat scroll 0 0;
   padding: 124px 0 72px;
   position: relative;
   width: 100%;
@@ -711,16 +713,16 @@ html {
 }
 .social-icons a {
   display: block;
-  font-size: 24px;
-  height: 72px;
-  width: 72px;
-  line-height: 72px;
+  font-size: 24px !important;
+  height: 72px !important;
+  width: 72px !important;
+  line-height: 72px !important;
   border-radius: 50%;
-  -webkit-transition: all .2s;
-  -moz-transition: all .2s;
-  -o-transition: all .2s;
-  -ms-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all .2s !important;
+  -moz-transition: all .2s !important;
+  -o-transition: all .2s !important;
+  -ms-transition: all .2s !important;
+  transition: all .2s !important;
 }
 .social-icons i {
   vertical-align: middle;
@@ -2360,6 +2362,7 @@ a .icon-flip-vertical:before {
 .icon-renren:before {
   content: "\f18b";
 }
+
 
 /*--search--*/
 input[type="search"] {

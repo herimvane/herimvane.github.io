@@ -1,12 +1,30 @@
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="{{ relative }}/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="{{ relative }}/assets/js/vendor/jquery-1.9.1.min.js"></script>
 <script src="{{ relative }}/assets/js/scripts.min.js"></script>
-<script type="text/javascript" src="{{ relative }}/assets/js/waypoints.min.js"></script>
 <script type="text/javascript" src="{{ relative }}/assets/js/script.js"></script>
+<!-- header Js -->
+<script src="{{ relative }}/assets/js/header/bootstrap.min.js"></script> <!-- Bootstrap -->
+<script src="{{ relative }}/assets/js/header/supersized.3.2.7.min.js"></script> <!-- Slider -->
+<script src="{{ relative }}/assets/js/header/waypoints.js"></script>
+<script src="{{ relative }}/assets/js/header/waypoints-sticky.js"></script> <!-- Waypoints for Header -->
+<script src="{{ relative }}/assets/js/header/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
+<script src="{{ relative }}/assets/js/header/main.js"></script> <!-- Default JS -->
+<!-- Modernizr -->
+<script src="{{ relative }}/assets/js/header/modernizr.js"></script>
+<!-- End Js -->
+
 <script type='text/javascript'>console.log("Thanks to HMFaysal");</script>
 <script type='text/javascript'>$(document).ready(function(){$(".time").text(function(a,b){return Math.round(parseFloat(b))})});</script>
 
+
 <script type="text/javascript">
+
+{% if page.url != '/' %}
+	$(function() {
+		$target = $("#main").offset().top-30;
+		$('body, html').animate({scrollTop : $target}, 750, 'easeOutExpo');
+	});
+{% endif %}
+
 
 /*      Slides       */
 

@@ -2,7 +2,7 @@
 layout: post
 title: Markdown Introduction
 description: "Let's write with markdown"
-category: it
+category: development
 tags: [makdown]
 comments: true
 share: true
