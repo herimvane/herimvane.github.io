@@ -63,9 +63,9 @@ tags: [HerimVane, programmer, blog, China]
 	        <div class="row">
 	            <article class="post col-md-10 col-md-offset-1">
 	               <header class="post-header">
-	                    <h2 class="post-title text-center super lighter">
-	                        <a href="{{ relative }}{{ post.url }}" style="color: #c91b26"><i class="icon-retweet"></i> "{{ post.excerpt | strip_html }}"</a>
-	                    </h2>
+	                    <div class="post-title text-center">
+	                        <a href="{{ relative }}{{ post.url }}" style="line-height:1px;">{% if post.music %}<i class="icon-music"></i>{% endif %} "{{ post.excerpt | strip_html }}"</a>
+	                    </div>
 	                    <p class="light small text-center">
 	                        Share this Status
 	                    </p>
