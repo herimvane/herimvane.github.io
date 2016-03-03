@@ -18,7 +18,7 @@
 	text-align: center;
     line-height: 50px;
 }
-@media (max-width: 480px) {
+@media (min-width: 480px) {
 	#musicContainer:hover .ctrl_area {
 		display: inline-block;
 	}
