@@ -6,7 +6,6 @@ var BRUSHED = window.BRUSHED || {};
    Mobile Navigation
 ================================================== */
 var mobileMenuClone = $('#menu').clone().attr('id', 'navigation-mobile');
-console.info(mobileMenuClone);
 
 BRUSHED.mobileNav = function(){
 	var windowWidth = $(window).width();

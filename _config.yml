@@ -65,14 +65,20 @@ links:
     url: /herimvane
     external: true
 
+#http://music.163.com/api/song/detail/?ids
 music:
   open: true
   narrow: true
   autoplay: false
-  title: 'How Long Will I Love You'
-  author: 'Jon Boden/Sam Sweeney'
-  url: 'http://m2.music.126.net/b9fJtGuRYzFbJnTY77hjcA==/1341404185968255.mp3'
-  pic: 'http://p4.music.126.net/tRBr4mAvZrg0HPk6lz-c2g==/2533274790647313.jpg'
+  musics:
+    - title: 'How Long Will I Love You'
+      author: 'Jon Boden/Sam Sweeney'
+      url: 'http://m2.music.126.net/b9fJtGuRYzFbJnTY77hjcA==/1341404185968255.mp3'
+      pic: 'http://p4.music.126.net/tRBr4mAvZrg0HPk6lz-c2g==/2533274790647313.jpg'
+    - title: "Sutter's Mill"
+      author: 'Dan Fogelberg'
+      url: 'http://m2.music.126.net/WsjKJ6ezgjrT1zcrpnSSsA==/1328210046369004.mp3'
+      pic: 'http://p3.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg'	
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Asia/Chongqing

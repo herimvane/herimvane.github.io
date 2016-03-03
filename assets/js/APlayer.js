@@ -53,8 +53,26 @@
         }
 
         // fill in HTML
-        var eleHTML = ''
-            + '<div class="aplayer-pic">'
+        var eleHTML = '';
+        if (this.playIndex > -1) {
+            eleHTML += 
+            '<div class="aplayer-list aplayer-list-hide">'
+            +     '<ol>';
+            for (i = 0; i < this.option.music.length; i++) {
+                eleHTML += ''
+            +         '<li>'
+            +             '<span class="aplayer-list-cur" style="background: ' + this.option.theme + ';"></span>'
+            +             '<span class="aplayer-list-index">' + (i + 1) + '</span>'
+            +             '<span class="aplayer-list-title">' + this.option.music[i].title + '</span>'
+            +             '<span class="aplayer-list-author">' + this.option.music[i].author + '</span>'
+            +         '</li>'
+            }
+            eleHTML += ''
+            +     '</ol>'
+            + '</div>'
+        }
+        eleHTML +=
+            '<div class="aplayer-pic">'
 			+     '<span id="picmask" class="mask"></span>'
             +     '<div class="aplayer-button aplayer-play">'
             +         '<i class="demo-icon aplayer-icon-play"></i>'
@@ -92,23 +110,6 @@
             +         '</div>'
             +     '</div>'
             + '</div>';
-        if (this.playIndex > -1) {
-            eleHTML += ''
-            + '<div class="aplayer-list">'
-            +     '<ol>';
-            for (i = 0; i < this.option.music.length; i++) {
-                eleHTML += ''
-            +         '<li>'
-            +             '<span class="aplayer-list-cur" style="background: ' + this.option.theme + ';"></span>'
-            +             '<span class="aplayer-list-index">' + (i + 1) + '</span>'
-            +             '<span class="aplayer-list-title">' + this.option.music[i].title + '</span>'
-            +             '<span class="aplayer-list-author">' + this.option.music[i].author + '</span>'
-            +         '</li>'
-            }
-            eleHTML += ''
-            +     '</ol>'
-            + '</div>'
-        }
         this.element.innerHTML = eleHTML;
         //<a class="ctrl_area"><i class="aplayer-icon-to-end"></i></a>
         var newspan=document.createElement('a');
@@ -120,7 +121,7 @@
 		}
         newspan.classList.add('ctrl_area')
 		newspan.innerHTML = iInner;
-        this.element.parentNode.appendChild(newspan);
+        this.element.appendChild(newspan);
 
         // switch to narrow style
         if (this.option.narrow) {
@@ -143,20 +144,25 @@
         /********show and hide aplayer-info***********/
         this.switchBtn = this.element.parentNode.getElementsByClassName('ctrl_area')[0];
         this.switchBtn.addEventListener('click', function () {
-			console.info(this.childNodes.item(0).classList);
+			var list = _self.element.getElementsByClassName('aplayer-list')[0];
             if (_self.element.classList.contains('aplayer-narrow')) {
 				//open
                _self.element.classList.remove('aplayer-narrow');
 			   this.childNodes.item(0).classList.remove('icon-chevron-right');
 			   this.childNodes.item(0).classList.add('icon-chevron-left');
 			   document.getElementById('picmask').classList.remove('mask');
+               list.classList.remove('aplayer-list-hide');
             } else {
 				//close
                 _self.element.classList.add('aplayer-narrow');
 				this.childNodes.item(0).classList.remove('icon-chevron-left');
 			   this.childNodes.item(0).classList.add('icon-chevron-right');
 			   document.getElementById('picmask').classList.add('mask');
+               if (!list.classList.contains('aplayer-list-hide')) {
+                    list.classList.add('aplayer-list-hide');
+                }
             }
+
         });
 
 

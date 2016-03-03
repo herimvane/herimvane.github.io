@@ -51,8 +51,9 @@ $("a#click-pages").click(function(){
 /*      End-Slides      */
 
 </script>
-{% if site.music.open %}
-<script>
+
+{% if site.music.open and page.layout == "home" %}
+<script type="text/javascript">
   $(document).ready(function() {
 	var ap = new APlayer({
 		element: document.getElementById('player'),
@@ -60,12 +61,16 @@ $("a#click-pages").click(function(){
 		autoplay: {{ site.music.autoplay }},
 		showlrc: false,
 		theme: '#3399FF',
-		music: {
-			title: '{{ site.music.title }}',
-			author: '{{ site.music.author }}',
-			url: '{{ site.music.url }}',
-			pic: '{{ site.music.pic }}'
-		}
+		music: [
+		{% for music in site.music.musics %}
+			{
+				title: "{{ music.title }}",
+				author: "{{ music.author }}",
+				url: "{{ music.url }}",
+				pic: "{{ music.pic }}"
+			},
+		{% endfor %} 
+		]
 	});
 	ap.init();
   });
