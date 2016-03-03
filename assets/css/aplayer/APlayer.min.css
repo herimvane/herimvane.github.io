@@ -18,11 +18,11 @@
 	text-align: center;
     line-height: 50px;
 }
-
-#musicContainer:hover .ctrl_area {
-	display: inline-block;
+@media (max-width: 480px) {
+	#musicContainer:hover .ctrl_area {
+		display: inline-block;
+	}
 }
-
 #player{
 	float: left;
 }
