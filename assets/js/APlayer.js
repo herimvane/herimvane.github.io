@@ -55,6 +55,7 @@
         // fill in HTML
         var eleHTML = ''
             + '<div class="aplayer-pic">'
+			+     '<span id="picmask" class="mask"></span>'
             +     '<div class="aplayer-button aplayer-play">'
             +         '<i class="demo-icon aplayer-icon-play"></i>'
             +     '</div>'
@@ -148,11 +149,13 @@
                _self.element.classList.remove('aplayer-narrow');
 			   this.childNodes.item(0).classList.remove('icon-chevron-right');
 			   this.childNodes.item(0).classList.add('icon-chevron-left');
+			   document.getElementById('picmask').classList.remove('mask');
             } else {
 				//close
                 _self.element.classList.add('aplayer-narrow');
 				this.childNodes.item(0).classList.remove('icon-chevron-left');
 			   this.childNodes.item(0).classList.add('icon-chevron-right');
+			   document.getElementById('picmask').classList.add('mask');
             }
         });
 
