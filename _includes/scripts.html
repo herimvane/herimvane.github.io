@@ -10,6 +10,8 @@
 <script src="{{ relative }}/assets/js/header/main.js"></script> <!-- Default JS -->
 <!-- Modernizr -->
 <script src="{{ relative }}/assets/js/header/modernizr.js"></script>
+<!-- aplayer -->
+<script src="{{ relative }}/assets/js/APlayer.js"></script>
 <!-- End Js -->
 
 <script type='text/javascript'>console.log("Thanks to HMFaysal");</script>
@@ -49,6 +51,26 @@ $("a#click-pages").click(function(){
 /*      End-Slides      */
 
 </script>
+{% if site.music.open %}
+<script>
+  $(document).ready(function() {
+	var ap = new APlayer({
+		element: document.getElementById('player'),
+		narrow: {{ site.music.narrow }},
+		autoplay: {{ site.music.autoplay }},
+		showlrc: false,
+		theme: '#3399FF',
+		music: {
+			title: '{{ site.music.title }}',
+			author: '{{ site.music.author }}',
+			url: '{{ site.music.url }}',
+			pic: '{{ site.music.pic }}'
+		}
+	});
+	ap.init();
+  });
+</script>
+{% endif %}
 
 {% if site.search %}
 <!-- Jekyll Simple Search option -->

@@ -65,6 +65,15 @@ links:
     url: /herimvane
     external: true
 
+music:
+  open: true
+  narrow: true
+  autoplay: false
+  title: 'How Long Will I Love You'
+  author: 'Jon Boden/Sam Sweeney'
+  url: 'http://m2.music.126.net/b9fJtGuRYzFbJnTY77hjcA==/1341404185968255.mp3'
+  pic: 'http://p4.music.126.net/tRBr4mAvZrg0HPk6lz-c2g==/2533274790647313.jpg'
+
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Asia/Chongqing
 future:      true
