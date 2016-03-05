@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Autumn in Beijing"
-description: ""
+type: photo
 category: photos
 tags: [photo]
-imagefeature: default_bg2.jpg
+photo: gallery1/psb1.jpg
 comments: true
 share: false
 ---

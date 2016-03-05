@@ -8,11 +8,12 @@ image:
 ---
 <figure>
   <img src="{{ site.url }}/images/herimvane.jpg" alt="Herim Vane">
-  <figcaption>Herim Vane</figcaption>
 </figure>
 
 >Programmer
 >
 >Guiyang
 >
-[{{ site.owner.email }}](mailto:{{ site.owner.email }})
+>[{{ site.owner.email }}](mailto:{{ site.owner.email }})
+>
+>wechat: system_out_print
